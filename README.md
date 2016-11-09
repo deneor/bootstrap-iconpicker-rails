@@ -1,22 +1,19 @@
-# rails-assets-bootstrap-iconpicker
+# bootstrap-iconpicker-rails
 
 > The Bower package inside a gem
 
-This gem was automatically generated. You can visit [rails-assets.org](https://rails-assets.org) for more information.
-
 ## Usage
 
-Add rails-assets source block to your `Gemfile`:
-
-```ruby
-source "https://rails-assets.org" do
-  gem "rails-assets-bootstrap-iconpicker"
-end
-
+```
+gem 'rails-assets-bootstrap-iconpicker', github: 'deneor/bootstrap-iconpicker-rails'
 ```
 
-Then, import the asset using Sprockets’ `require` directive:
+Then, import the asset using Sprockets' `require` directive:
 
-```js
+```javascript
 //= require "bootstrap-iconpicker"
 ```
+
+# Original repo with js
+
+https://github.com/victor-valencia/bootstrap-iconpicker
