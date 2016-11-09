@@ -188,24 +188,24 @@
             return this.options.cols * this.options.rows;
         }
     };
-    
+
     Iconpicker.prototype.updateArrows = function (page) {
         var op = this.options;
         var total_pages = this.totalPages();
-        if (page === 1) { 
-            op.table.find('.btn-previous').addClass('disabled');
+        if (page === 1) {
+            op.table.find('.btn-previous').addClass('disabled').prop('disabled',true);
         }
         else {
-            op.table.find('.btn-previous').removeClass('disabled');
+            op.table.find('.btn-previous').removeClass('disabled').removeProp('disabled');
         }
-        if (page === total_pages || total_pages === 0) { 
-            op.table.find('.btn-next').addClass('disabled');
+        if (page === total_pages || total_pages === 0) {
+            op.table.find('.btn-next').addClass('disabled').prop('disabled',true);
         }
         else {
-            op.table.find('.btn-next').removeClass('disabled');
+            op.table.find('.btn-next').removeClass('disabled').removeProp('disabled');
         }
     };
-    
+
     Iconpicker.prototype.updateIcons = function (page) {
         var op = this.options;
         var tbody = op.table.find('tbody').empty();
