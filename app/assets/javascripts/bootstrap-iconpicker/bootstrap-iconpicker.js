@@ -196,13 +196,13 @@
             op.table.find('.btn-previous').addClass('disabled').prop('disabled',true);
         }
         else {
-            op.table.find('.btn-previous').removeClass('disabled').removeProp('disabled');
+            op.table.find('.btn-previous').removeClass('disabled').prop('disabled', false);
         }
         if (page === total_pages || total_pages === 0) {
             op.table.find('.btn-next').addClass('disabled').prop('disabled',true);
         }
         else {
-            op.table.find('.btn-next').removeClass('disabled').removeProp('disabled');
+            op.table.find('.btn-next').removeClass('disabled').prop('disabled', false);
         }
     };
 
