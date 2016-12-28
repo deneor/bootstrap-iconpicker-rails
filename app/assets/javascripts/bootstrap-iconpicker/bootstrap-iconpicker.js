@@ -221,7 +221,8 @@
                 var btn = $('<button class="btn ' + op.unselectedClass + ' btn-icon"></button>').hide();
                 if (pos < op.icons.length) {
                     var v = op.iconClassFix + op.icons[pos];
-                    btn.val(v).attr('title', v).append('<i class="' + op.iconClass + ' ' + v + '"></i>').show();
+                    var title = v.replace(/([\w-]+)\s+\1-/g,'')
+                    btn.val(v).attr('title', title).append('<i class="' + op.iconClass + ' ' + v + '"></i>').show();
                     if (op.icon === v) {
                         btn.addClass(op.selectedClass).addClass('btn-icon-selected');
                     }
